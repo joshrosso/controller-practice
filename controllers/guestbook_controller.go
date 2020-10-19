@@ -34,6 +34,8 @@ type GuestbookReconciler struct {
 	Scheme *runtime.Scheme
 }
 
+// +kubebuilder:rbac:groups=webapp.controller.octetz,resources=dogs,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=batch,resources=jobs/status,verbs=get
 // +kubebuilder:rbac:groups=webapp.controller.octetz,resources=guestbooks,verbs=get;list;watch;create;update;patch;delete
 // +kubebuilder:rbac:groups=webapp.controller.octetz,resources=guestbooks/status,verbs=get;update;patch
 
