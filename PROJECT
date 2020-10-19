@@ -1,0 +1,7 @@
+domain: controller.octetz
+repo: octetz.com/k8s
+resources:
+- group: webapp
+  kind: Guestbook
+  version: v1
+version: "2"
